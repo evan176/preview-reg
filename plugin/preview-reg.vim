@@ -19,14 +19,14 @@ endfunction
 
 function! SelectReg()
     let l:reg_list = s:capture_reg()
-    let l:temp = tlib#input#List('s', 'Select one item to paste', l:reg_list)
+    let l:temp = tlib#input#List('s', 'Select a item to paste', l:reg_list)
     let l:reg_num = split(l:temp, "   ")[0]
     call feedkeys(l:reg_num . "p")
 endfunction
 
 function! SelectMark()
     let l:mark_list = s:capture_mark()
-    let l:temp = tlib#input#List('s', 'Select one item to paste', l:mark_list)
+    let l:temp = tlib#input#List('s', 'Select a mark to jump', l:mark_list)
     let l:reg_num = split(l:temp, '   ')
     call feedkeys("'" . l:reg_num[0][1:])
 endfunction
