@@ -24,5 +24,8 @@ Use "Enter" for selecting the item which will be put in the cursor position.
 ###Marks menu
 Like register menu, you could use this menu to jump to any mark in file.
 
-#Thanks
+##Thanks
 * tomtom for [tlib_vim] (https://github.com/tomtom/tlib_vim): it provides a good way to display menu in vim
+
+##TODO
+Reformat the information in menu
